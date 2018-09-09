@@ -33,21 +33,18 @@ public class CSVReader extends BufferedReader {
 	 * Create a buffering character-input stream that uses a default-sized input
 	 * buffer.
 	 * 
-	 * @param in
-	 *            A Reader
+	 * @param in A Reader
 	 */
 	public CSVReader(Reader in) {
 		super(in);
 	}
 
 	/**
-	 * Create a buffering character-input stream that uses an input buffer of
-	 * the specified size.
+	 * Create a buffering character-input stream that uses an input buffer of the
+	 * specified size.
 	 * 
-	 * @param in
-	 *            A Reader
-	 * @param sz
-	 *            Input-buffer size
+	 * @param in A Reader
+	 * @param sz Input-buffer size
 	 */
 	public CSVReader(Reader in, int sz) {
 		super(in, sz);
@@ -56,8 +53,8 @@ public class CSVReader extends BufferedReader {
 	/**
 	 * Indicates if the last field read was at the end of the line.
 	 * 
-	 * @return true if last field read was at the end of the line, false
-	 *         otherwise or if no fields have been read.
+	 * @return true if last field read was at the end of the line, false otherwise
+	 *         or if no fields have been read.
 	 */
 	public boolean hasMoreFieldsOnLine() {
 		return this.moreFieldsOnLine;
@@ -76,13 +73,10 @@ public class CSVReader extends BufferedReader {
 	 * Reads the current line's fields into an ArrayList. This is a convenience
 	 * method.
 	 * 
-	 * @param fields
-	 *            container for the fields in the current row. It will be
-	 *            cleared.
-	 * @throws IOException
-	 *             on general I/O error
-	 * @throws EOFException
-	 *             on end of file
+	 * @param fields container for the fields in the current row. It will be
+	 *               cleared.
+	 * @throws IOException  on general I/O error
+	 * @throws EOFException on end of file
 	 */
 	public void readFields(ArrayList<String> fields) throws IOException {
 		fields.clear();
@@ -98,9 +92,8 @@ public class CSVReader extends BufferedReader {
 	 * Reads the next field from the input removing quotes as necessary.
 	 * 
 	 * @return next field
-	 * @throws IOException
-	 *             If an I/O error occurs, may be an EOFException on end of
-	 *             input.
+	 * @throws IOException If an I/O error occurs, may be an EOFException on end of
+	 *                     input.
 	 */
 	public String readField() throws IOException {
 		int c;

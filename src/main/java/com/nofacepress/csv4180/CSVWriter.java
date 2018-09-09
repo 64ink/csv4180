@@ -32,37 +32,32 @@ import java.util.regex.Pattern;
 public class CSVWriter extends BufferedWriter {
 
 	/**
-	 * Create a buffered character-output stream that uses a default-sized
-	 * output buffer.
+	 * Create a buffered character-output stream that uses a default-sized output
+	 * buffer.
 	 * 
-	 * @param out
-	 *            A writer
+	 * @param out A writer
 	 */
 	public CSVWriter(Writer out) {
 		super(out);
 	}
 
 	/**
-	 * Create a new buffered character-output stream that uses an output buffer
-	 * of the given size.
+	 * Create a new buffered character-output stream that uses an output buffer of
+	 * the given size.
 	 * 
-	 * @param out
-	 *            A writer
-	 * @param sz
-	 *            Output-buffer size, a positive integer
+	 * @param out A writer
+	 * @param sz  Output-buffer size, a positive integer
 	 */
 	public CSVWriter(Writer out, int sz) {
 		super(out, sz);
 	}
 
 	/**
-	 * Writes a line of fields to the writer. A new line is automatically added
-	 * if beyond the first call to this method. This is a convenience method.
+	 * Writes a line of fields to the writer. A new line is automatically added if
+	 * beyond the first call to this method. This is a convenience method.
 	 * 
-	 * @param fields
-	 *            fields to output
-	 * @throws IOException
-	 *             on general I/O error
+	 * @param fields fields to output
+	 * @throws IOException on general I/O error
 	 */
 	public void writeFields(ArrayList<String> fields) throws IOException {
 
@@ -78,13 +73,11 @@ public class CSVWriter extends BufferedWriter {
 	}
 
 	/**
-	 * Writes a line of fields to the writer. A new line is automatically added
-	 * if beyond the first call to this method. This is a convenience method.
+	 * Writes a line of fields to the writer. A new line is automatically added if
+	 * beyond the first call to this method. This is a convenience method.
 	 * 
-	 * @param fields
-	 *            fields to output
-	 * @throws IOException
-	 *             on general I/O error
+	 * @param fields fields to output
+	 * @throws IOException on general I/O error
 	 */
 	public void writeFields(String[] fields) throws IOException {
 
@@ -99,10 +92,9 @@ public class CSVWriter extends BufferedWriter {
 	}
 
 	/**
-	 * Write a line separator. 
+	 * Write a line separator.
 	 * 
-	 * @exception IOException
-	 *                If an I/O error occurs
+	 * @exception IOException If an I/O error occurs
 	 * @see java.io.BufferedWriter#newLine()
 	 */
 	@Override
@@ -112,13 +104,11 @@ public class CSVWriter extends BufferedWriter {
 	}
 
 	/**
-	 * Write a field to the output quoting as necessary and adding comma
-	 * separators between fields.
+	 * Write a field to the output quoting as necessary and adding comma separators
+	 * between fields.
 	 * 
-	 * @param field
-	 *            String to write
-	 * @throws IOException
-	 *             If an I/O error occurs
+	 * @param field String to write
+	 * @throws IOException If an I/O error occurs
 	 */
 	public void writeField(String field) throws IOException {
 
