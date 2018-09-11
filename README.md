@@ -17,7 +17,7 @@ Build status: [![build_status](https://travis-ci.org/phillip-kruger/apiee.svg?br
 <dependency>
   <groupId>com.nofacepress</groupId>
   <artifactId>csv-4180</artifactId>
-  <version>0.2.6</version>
+  <version>0.2.7</version>
 </dependency>
 ```
 
