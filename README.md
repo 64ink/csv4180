@@ -11,6 +11,16 @@ This library was created because other libraries had bad licenses, invalid imple
 Build status: [![build_status](https://travis-ci.org/phillip-kruger/apiee.svg?branch=master)](https://travis-ci.org/phillip-kruger/apiee)
 
 
+## Maven Setup
+
+```xml
+<dependency>
+  <groupId>com.nofacepress</groupId>
+  <artifactId>csv-4180</artifactId>
+  <version>0.2.6</version>
+</dependency>
+```
+
 ## Quick Start: Reading Files
 The most intuitive way to to read the CSV file one row at a time. This is done using the convenience method CSVReader::readFields() as shown below.
 
