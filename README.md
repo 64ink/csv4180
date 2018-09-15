@@ -8,7 +8,7 @@ This library is all business with no frills. There are tons of powerful alternat
 
 This library was created because other libraries had bad licenses, invalid implementations or were unnecessarily complicated. If someone is interested in CSV then they are most likely interested in Excel. "Make it simple stupid" is the motto for CSV4180. CSV is not hard, so there is no need to go overboard when implementing it.
 
-Build status: [![build_status](https://travis-ci.org/phillip-kruger/apiee.svg?branch=master)](https://travis-ci.org/phillip-kruger/apiee)
+Build status:[![build_status](https://travis-ci.org/nofacepress/csv4180.svg?branch=master)](https://travis-ci.org/nofacepress/csv4180)
 
 
 ## Maven Setup
