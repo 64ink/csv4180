@@ -10,7 +10,7 @@
 
 	<name>csv-4180</name>
 	<url>https://github.com/nofacepress/csv4180</url>
-	<description>Simple exporter for Spring State Machine to plantUML format.</description>
+	<description>Simple Excel compatible (RFC 4180) CSV Reader/Writer.</description>
 	<organization>
 		<name>No Face Press, LLC</name>
 		<url>http://nofacepress.com</url>
